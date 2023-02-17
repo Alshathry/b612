@@ -1,0 +1,20 @@
+var obj = JSON.parse($response.body);
+
+obj = 
+
+{
+  "result": {
+    "products": [
+      {
+        "managed": false,
+        "status": "ACTIVE",
+        "startDate": 1676626104000,
+        "productId": "com.linecorp.b612.vip.oneyear",
+        "expireDate": 1677230898000
+      }
+    ],
+    "activated": true
+  }
+}
+
+$done({body: JSON.stringify(obj)});
